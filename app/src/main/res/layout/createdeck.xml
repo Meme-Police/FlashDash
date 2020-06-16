@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/MainLogo"
+        android:id="@+id/textView"
         android:layout_width="230dp"
         android:layout_height="56dp"
         android:layout_marginStart="35dp"
@@ -24,46 +24,49 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <Button
-        android:id="@+id/newDeckButton"
+    <EditText
+        android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="165dp"
-        android:layout_marginTop="217dp"
-        android:layout_marginEnd="153dp"
-        android:layout_marginBottom="21dp"
-        android:text="New Deck"
-        app:layout_constraintBottom_toTopOf="@+id/libraryButton"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Deck Name"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/MainLogo" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/libraryButton"
+        android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="164dp"
-        android:layout_marginTop="21dp"
-        android:layout_marginEnd="159dp"
-        android:layout_marginBottom="305dp"
-        android:text="Library"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="48dp"
+        android:text="Add Card"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/newDeckButton" />
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <Button
-        android:id="@+id/importDeckButton"
+        android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="148dp"
-        android:layout_marginBottom="208dp"
-        android:text="Import Deck"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="341dp"
+        android:text="Save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/libraryButton" />
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
